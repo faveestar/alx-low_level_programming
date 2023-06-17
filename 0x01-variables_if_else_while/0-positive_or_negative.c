@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>  /* Added the stdio.h header */
 
 /**
  * main - Entry point of the program
