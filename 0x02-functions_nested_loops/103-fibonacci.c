@@ -37,7 +37,7 @@ int main(void)
 	unsigned long limit = 4000000;
 	unsigned long sum = sum_even_fibonacci(limit);
 
-	printf("%lu\n", limit, sum);
+	printf("%lu\n", sum);
 
 	return (0);
 }
