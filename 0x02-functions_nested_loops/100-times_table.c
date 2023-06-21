@@ -9,9 +9,7 @@ void print_times_table(int n)
 	if (n < 0 || n > 15)
 		return;
 
-	int row;
-	int column;
-	int product;
+	int row, column, product;
 
 	for (row = 0; row <= n; row++)
 	{
@@ -20,9 +18,11 @@ void print_times_table(int n)
 			product = row * column;
 
 			if (column != 0)
+			{
 				_putchar(',');
+				_putchar(' ');
+			}
 
-			/* Print spacing and product */
 			if (product < 10)
 			{
 				_putchar(' ');
@@ -45,3 +45,4 @@ void print_times_table(int n)
 		_putchar('\n');
 	}
 }
+
