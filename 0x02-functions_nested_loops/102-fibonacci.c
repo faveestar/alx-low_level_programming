@@ -1,16 +1,21 @@
 #include <stdio.h>
 
-void print_fibonacci(int n) {
-	int first = 1;
-	int second = 2;
-	int next;
+/**
+ * print_fibonacci - Prints the first n Fibonacci numbers.
+ * @n: The number of Fibonacci numbers to print.
+ */
+void print_fibonacci(int n)
+{
+	long long first = 1;
+	long long second = 2;
+	long long next;
 	int i;
 
-	printf("%d, %d", first, second);
+	printf("%lld, %lld", first, second);
 
 	for (i = 3; i <= n; i++) {
 		next = first + second;
-		printf(", %d", next);
+		printf(", %lld", next);
 		first = second;
 		second = next;
 	}
@@ -23,7 +28,9 @@ void print_fibonacci(int n) {
  *
  * Return: 0 on successful execution.
  */
-int main(void) {
+int main(void)
+{
 	print_fibonacci(50);
 	return 0;
 }
+
