@@ -6,16 +6,16 @@
  */
 void print_fibonacci(int n)
 {
-	long long first = 1;
-	long long second = 2;
-	long long next;
+	unsigned long first = 1;
+	unsigned long second = 2;
+	unsigned long next;
 	int i;
 
-	printf("%lld, %lld", first, second);
+	printf("%lu, %lu", first, second);
 
 	for (i = 3; i <= n; i++) {
 		next = first + second;
-		printf(", %lld", next);
+		printf(", %lu", next);
 		first = second;
 		second = next;
 	}
@@ -31,6 +31,5 @@ void print_fibonacci(int n)
 int main(void)
 {
 	print_fibonacci(50);
-	return 0;
+	return (0);
 }
-
