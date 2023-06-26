@@ -19,7 +19,7 @@ void puts_half(char *str)
 	}
 
 	/* Calculate the starting index based on string length */
-	start = (length - 1) / 2;
+	start = length / 2;
 	if (length % 2 != 0)
 	{
 		start++;
